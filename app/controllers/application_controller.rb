@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   
   def personal_greeting
     render html: "This is my first rails app, created by Austin Harshberger"
-    render html: "Does this work?"
   end
+  
 end
