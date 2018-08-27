@@ -4,4 +4,4 @@
 
 This is the first application for the
 [*Ruby on Rails Tutorial*](http://www.railstutorial.org/)
-by [Austin Harshbergerl](http://www.michaelhartl.com/). Hello, world!
+by [Austin Harshberger](http://www.michaelhartl.com/). Hello, world!
