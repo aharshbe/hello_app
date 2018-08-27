@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 
+# Excluse SQLite3 because Heroku doesn't support it
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
@@ -19,6 +20,11 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+end
+
+# Add PostgresSQL
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
