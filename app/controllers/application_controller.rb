@@ -5,7 +5,12 @@ class ApplicationController < ActionController::Base
     render html: "¡Hola, mundo!"
   end
   
-    def goodbye
+  def goodbye
     render html: "goodbye, world!"
+  end
+  
+  def personal_greeting
+    render html: "This is my first rails app, created by Austin Harshberger"
+    render html: :'<a href="https://devrobot.live/" target="_blank">Other projects viewable here!</a>'
   end
 end
